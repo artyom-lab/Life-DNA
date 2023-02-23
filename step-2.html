@@ -1,0 +1,959 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>LifeDNA</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+		<link rel="stylesheet" href="libs/owl-carousel-2/owl.carousel.min.css">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
+		<link rel="stylesheet" href="libs/owl-carousel-2/owl.theme.default.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<nav class="navbar navbar-light bg-white sticky-top shadow-none">
+			<div class="container">
+				<div class="col-3 col-sm-4 px-0">
+					<a class="navbar-brand mr-0" href="#!">
+						<img src="img/logo.svg" alt="">
+					</a>
+				</div>
+				<div class="col-3 col-sm-4 px-0 text-right">
+					<div class="dropdown">
+						<span class="dropdown-t" data-toggle="dropdown">
+							<span class="avatar" style="background-image: url(img/avatar.png)"></span>
+							<h6 class="ml-2 mb-0 d-none d-md-inline">Cyril Moukarzel</h6>
+							<img src="img/arrow.svg" alt="" class="ml-1">
+						</span>
+						<div class="dropdown-menu dropdown-menu-right">
+							<a class="dropdown-item" href="#!">Profile</a>
+							<a class="dropdown-item" href="#!">Logout</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<div class="line-gray">
+			<div class="line-green line-green-66"></div>
+		</div>
+
+		<section class="section fz-18">
+			<div class="container">
+				<div class="form-row justify-content-center">
+					<div class="col-sm-11 col-md-8 col-lg-6 text-center">
+						<p class="fz-26 font-weight-bold text-black mb-2">You’re almost there!</p>
+						<p class="fz-16">You've agreed to see your LifeDNA Reports. Now, please select all the traits that you would like to view.</p>
+					</div>
+					<div class="col-lg-10 col-xl-9 mt-3">
+						<div class="card card-reports">
+							<div class="card-reports-top">
+								<div class="row row-1">
+									<div class="col-auto">
+										<img src="img/test/!.svg" alt="">
+									</div>
+									<div class="col col-xl-5">
+										<div class="fz-18 font-weight-bold text-black">Consider the following guidelines before you select your answers:</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-reports-body fz-14">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-row mb-4">
+											<div class="col-auto">
+												<span class="text-success-2">●</span>
+											</div>
+											<div class="col">These reports only show your risks and carrier status for certain diseases. Your results do not determine whether or not you will most certainly get those traits.</div>
+										</div>
+										<div class="form-row mb-4">
+											<div class="col-auto">
+												<span class="text-success-2">●</span>
+											</div>
+											<div class="col">All the traits included in your DNA reports do not cover all the variants that may be associated with the disease.</div>
+										</div>
+										<div class="form-row mb-4">
+											<div class="col-auto">
+												<span class="text-success-2">●</span>
+											</div>
+											<div class="col">If your Carrier Report shows a "No variants detected" result, it means a disease-causing mutation/genetic variant was not found in your DNA, and that all genetic variants you have are normal genetic variants or non-disease causing.</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-row mb-4">
+											<div class="col-auto">
+												<span class="text-success-2">●</span>
+											</div>
+											<div class="col">Your reports may contain certain diseases and health conditions that do not have an effective treatment or cure yet.</div>
+										</div>
+										<div class="form-row mb-4">
+											<div class="col-auto">
+												<span class="text-success-2">●</span>
+											</div>
+											<div class="col">Knowing the genetic results may cause a strong emotional impact for certain people. Assess your mental health and consult a genetic counselor or a health professional to determine if you’re ready to handle such potentially life-changing news.</div>
+										</div>
+										<div class="form-row mb-4">
+											<div class="col-auto">
+												<span class="text-success-2">●</span>
+											</div>
+											<div class="col">Healthcare professionals and organizations do not recommend genetic testing for the  diseases included in these reports.</div>
+										</div>
+									</div>
+								</div>
+							</div>	
+						</div>
+					</div>
+					<div class="col-lg-10 col-xl-9 mt-4">
+						<div class="fz-18 font-weight-bold text-black py-4 text-center text-md-left">Please check the ‘Yes’ box on the traits that you’re ready to see now.</div>
+
+	 			  	<div class="nav nav-covid justify-content-center justify-content-md-start">
+	 			  		<a class="btn btn-outline-success nav-link font-weight-normal active" data-toggle="tab" href="#disease">Disease</a>
+	 			  		<a class="btn btn-outline-success nav-link font-weight-normal" data-toggle="tab" href="#covid">COVID-19</a>
+	 			  		<a class="btn btn-outline-success nav-link font-weight-normal" data-toggle="tab" href="#carrier">Carrier</a>
+			    	</div>
+
+						<div class="tab-content mt-4">
+							<div class="tab-pane fade show active" id="disease">
+								<div class="card card-reports">
+									<div class="card-reports-top pt-4 pb-3">
+										<div class="fz-18 font-weight-bold text-black">Disease Traits:</div>
+									</div>
+									<div class="scroll-wrap">
+										<div class="scroll">
+											<div class="block">
+												<div class="row row-2 align-items-center">
+													<div class="col-md-6">
+														<span class="align-middle fz-16 mr-1">Age-related Macular Degeneration</span>
+														<a href="#!" class="img-question"  data-toggle="modal" data-target="#modal"></a>
+													</div>
+													<div class="col-md-6 mt-4 mt-md-1">
+														<div class="row align-items-center">
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name1-1">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">Yes</span>
+										            </label>
+															</div>
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name1-1">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">I am not ready yet</span>
+										            </label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="block">
+												<div class="row row-2 align-items-center">
+													<div class="col-md-6">
+														<span class="align-middle fz-16 mr-1">Celiac Disease</span>
+														<a href="#!" class="img-question"  data-toggle="modal" data-target="#modal"></a>
+													</div>
+													<div class="col-md-6 mt-4 mt-md-1">
+														<div class="row align-items-center">
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name1-2">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">Yes</span>
+										            </label>
+															</div>
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name1-2">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">I am not ready yet</span>
+										            </label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="block">
+												<div class="row row-2 align-items-center">
+													<div class="col-md-6">
+														<span class="align-middle fz-16 mr-1">Familial Hypercholesterolemia</span>
+														<a href="#!" class="img-question"  data-toggle="modal" data-target="#modal"></a>
+													</div>
+													<div class="col-md-6 mt-4 mt-md-1">
+														<div class="row align-items-center">
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name1-3">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">Yes</span>
+										            </label>
+															</div>
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name1-3">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">I am not ready yet</span>
+										            </label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="block">
+												<div class="row row-2 align-items-center">
+													<div class="col-md-6">
+														<span class="align-middle fz-16 mr-1">Iron Overload Disorder</span>
+														<a href="#!" class="img-question"  data-toggle="modal" data-target="#modal"></a>
+													</div>
+													<div class="col-md-6 mt-4 mt-md-1">
+														<div class="row align-items-center">
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name1-4">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">Yes</span>
+										            </label>
+															</div>
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name1-4">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">I am not ready yet</span>
+										            </label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="block">
+												<div class="row row-2 align-items-center">
+													<div class="col-md-6">
+														<span class="align-middle fz-16 mr-1">G6PD Deficiency</span>
+														<a href="#!" class="img-question"  data-toggle="modal" data-target="#modal"></a>
+													</div>
+													<div class="col-md-6 mt-4 mt-md-1">
+														<div class="row align-items-center">
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name1-5">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">Yes</span>
+										            </label>
+															</div>
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name1-5">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">I am not ready yet</span>
+										            </label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="block">
+												<div class="row row-2 align-items-center">
+													<div class="col-md-6">
+														<span class="align-middle fz-16 mr-1">Hereditary Amyloidosis (TTR-Related)</span>
+														<a href="#!" class="img-question"  data-toggle="modal" data-target="#modal"></a>
+													</div>
+													<div class="col-md-6 mt-4 mt-md-1">
+														<div class="row align-items-center">
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name1-6">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">Yes</span>
+										            </label>
+															</div>
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name1-6">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">I am not ready yet</span>
+										            </label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="block">
+												<div class="row row-2 align-items-center">
+													<div class="col-md-6">
+														<span class="align-middle fz-16 mr-1">Hereditary Thrombophilia</span>
+														<a href="#!" class="img-question"  data-toggle="modal" data-target="#modal"></a>
+													</div>
+													<div class="col-md-6 mt-4 mt-md-1">
+														<div class="row align-items-center">
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name1-7">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">Yes</span>
+										            </label>
+															</div>
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name1-7">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">I am not ready yet</span>
+										            </label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="block">
+												<div class="row row-2 align-items-center">
+													<div class="col-md-6">
+														<span class="align-middle fz-16 mr-1">MUTYH-Associated Polyposis</span>
+														<a href="#!" class="img-question"  data-toggle="modal" data-target="#modal"></a>
+													</div>
+													<div class="col-md-6 mt-4 mt-md-1">
+														<div class="row align-items-center">
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name1-8">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">Yes</span>
+										            </label>
+															</div>
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name1-8">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">I am not ready yet</span>
+										            </label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="block">
+												<div class="row row-2 align-items-center">
+													<div class="col-md-6">
+														<span class="align-middle fz-16 mr-1">Alpha-1 antitrypsin deficiency</span>
+														<a href="#!" class="img-question"  data-toggle="modal" data-target="#modal"></a>
+													</div>
+													<div class="col-md-6 mt-4 mt-md-1">
+														<div class="row align-items-center">
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name1-9">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">Yes</span>
+										            </label>
+															</div>
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name1-9">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">I am not ready yet</span>
+										            </label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="block">
+												<div class="row row-2 align-items-center">
+													<div class="col-md-6">
+														<span class="align-middle fz-16 mr-1">Late-Onset Alzheimer's Disease</span>
+														<a href="#!" class="img-question"  data-toggle="modal" data-target="#modal"></a>
+													</div>
+													<div class="col-md-6 mt-4 mt-md-1">
+														<div class="row align-items-center">
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name1-10">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">Yes</span>
+										            </label>
+															</div>
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name1-10">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">I am not ready yet</span>
+										            </label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="block">
+												<div class="row row-2 align-items-center">
+													<div class="col-md-6">
+														<span class="align-middle fz-16 mr-1">Parkinson's Disease</span>
+														<a href="#!" class="img-question"  data-toggle="modal" data-target="#modal"></a>
+													</div>
+													<div class="col-md-6 mt-4 mt-md-1">
+														<div class="row align-items-center">
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name1-11">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">Yes</span>
+										            </label>
+															</div>
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name1-11">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">I am not ready yet</span>
+										            </label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="block">
+												<div class="row row-2 align-items-center">
+													<div class="col-md-6">
+														<span class="align-middle font-weight-bold fz-16 mr-1">All of them</span>
+													</div>
+													<div class="col-md-6 mt-4 mt-md-1">
+														<div class="row align-items-center">
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name1-all">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">Yes</span>
+										            </label>
+															</div>
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name1-all">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">I am not ready yet</span>
+										            </label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>	
+								</div>
+							</div>
+							<div class="tab-pane fade" id="covid">
+								<div class="card card-reports">
+									<div class="card-reports-top pt-4 pb-3">
+										<div class="fz-18 font-weight-bold text-black">COVID-19 Traits:</div>
+									</div>
+									<div class="scroll-wrap">
+										<div class="scroll">
+											<div class="block">
+												<div class="row row-2 align-items-center">
+													<div class="col-md-6">
+														<span class="align-middle fz-16 mr-1">Predisposition to Coronavirus Infection</span>
+														<a href="#!" class="img-question"  data-toggle="modal" data-target="#modal"></a>
+													</div>
+													<div class="col-md-6 mt-4 mt-md-1">
+														<div class="row align-items-center">
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name2-1">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">Yes</span>
+										            </label>
+															</div>
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name2-1">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">I am not ready yet</span>
+										            </label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="block bg-notif">
+												<div class="form-row">
+													<div class="col-auto fz-0">
+														<img src="img/oto-platinum/icon-5.svg" alt="" width="12" class="mt-1">
+													</div>
+													<div class="col col-xl-9 fz-12">If you choose not to view your Predisposition to Coronavirus Infection and Infection Severity traits, these trait reports would not be shown in your COVID-19 Lifestyle Report and DNA + Lifestyle Report as well.</div>
+												</div>
+											</div>
+											<div class="block">
+												<div class="row row-2 align-items-center">
+													<div class="col-md-6">
+														<span class="align-middle fz-16 mr-1">Infection Severity</span>
+														<a href="#!" class="img-question"  data-toggle="modal" data-target="#modal"></a>
+													</div>
+													<div class="col-md-6 mt-4 mt-md-1">
+														<div class="row align-items-center">
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name2-2">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">Yes</span>
+										            </label>
+															</div>
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name2-2">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">I am not ready yet</span>
+										            </label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="block">
+												<div class="row row-2 align-items-center">
+													<div class="col-md-6">
+														<span class="align-middle fz-16 mr-1">Reaction to Oseltamivir</span>
+														<a href="#!" class="img-question"  data-toggle="modal" data-target="#modal"></a>
+													</div>
+													<div class="col-md-6 mt-4 mt-md-1">
+														<div class="row align-items-center">
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name2-3">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">Yes</span>
+										            </label>
+															</div>
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name2-3">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">I am not ready yet</span>
+										            </label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="block">
+												<div class="row row-2 align-items-center">
+													<div class="col-md-6">
+														<span class="align-middle fz-16 mr-1">Reaction to Chloroquine</span>
+														<a href="#!" class="img-question"  data-toggle="modal" data-target="#modal"></a>
+													</div>
+													<div class="col-md-6 mt-4 mt-md-1">
+														<div class="row align-items-center">
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name2-4">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">Yes</span>
+										            </label>
+															</div>
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name2-4">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">I am not ready yet</span>
+										            </label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="block">
+												<div class="row row-2 align-items-center">
+													<div class="col-md-6">
+														<span class="align-middle fz-16 mr-1">Response to Lopinavir</span>
+														<a href="#!" class="img-question"  data-toggle="modal" data-target="#modal"></a>
+													</div>
+													<div class="col-md-6 mt-4 mt-md-1">
+														<div class="row align-items-center">
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name2-5">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">Yes</span>
+										            </label>
+															</div>
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name2-5">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">I am not ready yet</span>
+										            </label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="block">
+												<div class="row row-2 align-items-center">
+													<div class="col-md-6">
+														<span class="align-middle fz-16 mr-1">Response to Hydroxychloroquine</span>
+														<a href="#!" class="img-question"  data-toggle="modal" data-target="#modal"></a>
+													</div>
+													<div class="col-md-6 mt-4 mt-md-1">
+														<div class="row align-items-center">
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name2-6">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">Yes</span>
+										            </label>
+															</div>
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name2-6">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">I am not ready yet</span>
+										            </label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="block">
+												<div class="row row-2 align-items-center">
+													<div class="col-md-6">
+														<span class="align-middle font-weight-bold fz-16 mr-1">All of them</span>
+													</div>
+													<div class="col-md-6 mt-4 mt-md-1">
+														<div class="row align-items-center">
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name2-all">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">Yes</span>
+										            </label>
+															</div>
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name2-all">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">I am not ready yet</span>
+										            </label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>	
+								</div>
+							</div>
+							<div class="tab-pane fade" id="carrier">
+								<div class="card card-reports">
+									<div class="card-reports-top pt-4 pb-3">
+										<div class="fz-18 font-weight-bold text-black">Carrier Traits:</div>
+									</div>
+									<div class="scroll-wrap">
+										<div class="scroll">
+											<div class="block">
+												<div class="row row-2 align-items-center">
+													<div class="col-md-6">
+														<span class="align-middle fz-16 mr-1">Sickle cell disease and other Hemoglobanopathies</span>
+														<a href="#!" class="img-question"  data-toggle="modal" data-target="#modal"></a>
+													</div>
+													<div class="col-md-6 mt-4 mt-md-1">
+														<div class="row align-items-center">
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name3-1">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">Yes</span>
+										            </label>
+															</div>
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name3-1">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">I am not ready yet</span>
+										            </label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="block">
+												<div class="row row-2 align-items-center">
+													<div class="col-md-6">
+														<span class="align-middle fz-16 mr-1">Cystic fibrosis</span>
+														<a href="#!" class="img-question"  data-toggle="modal" data-target="#modal"></a>
+													</div>
+													<div class="col-md-6 mt-4 mt-md-1">
+														<div class="row align-items-center">
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name3-2">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">Yes</span>
+										            </label>
+															</div>
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name3-2">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">I am not ready yet</span>
+										            </label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="block">
+												<div class="row row-2 align-items-center">
+													<div class="col-md-6">
+														<span class="align-middle fz-16 mr-1">Tay-sachs disease</span>
+														<a href="#!" class="img-question"  data-toggle="modal" data-target="#modal"></a>
+													</div>
+													<div class="col-md-6 mt-4 mt-md-1">
+														<div class="row align-items-center">
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name3-3">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">Yes</span>
+										            </label>
+															</div>
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name3-3">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">I am not ready yet</span>
+										            </label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="block">
+												<div class="row row-2 align-items-center">
+													<div class="col-md-6">
+														<span class="align-middle fz-16 mr-1">Canavan Disease</span>
+														<a href="#!" class="img-question"  data-toggle="modal" data-target="#modal"></a>
+													</div>
+													<div class="col-md-6 mt-4 mt-md-1">
+														<div class="row align-items-center">
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name3-4">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">Yes</span>
+										            </label>
+															</div>
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name3-4">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">I am not ready yet</span>
+										            </label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="block">
+												<div class="row row-2 align-items-center">
+													<div class="col-md-6">
+														<span class="align-middle fz-16 mr-1">Familial Hyperinsulinemia</span>
+														<a href="#!" class="img-question"  data-toggle="modal" data-target="#modal"></a>
+													</div>
+													<div class="col-md-6 mt-4 mt-md-1">
+														<div class="row align-items-center">
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name3-5">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">Yes</span>
+										            </label>
+															</div>
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name3-5">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">I am not ready yet</span>
+										            </label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="block">
+												<div class="row row-2 align-items-center">
+													<div class="col-md-6">
+														<span class="align-middle fz-16 mr-1">Hereditary Sensory Neuropathy</span>
+														<a href="#!" class="img-question"  data-toggle="modal" data-target="#modal"></a>
+													</div>
+													<div class="col-md-6 mt-4 mt-md-1">
+														<div class="row align-items-center">
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name3-6">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">Yes</span>
+										            </label>
+															</div>
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name3-6">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">I am not ready yet</span>
+										            </label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="block">
+												<div class="row row-2 align-items-center">
+													<div class="col-md-6">
+														<span class="align-middle fz-16 mr-1">Phenylketonuria</span>
+														<a href="#!" class="img-question"  data-toggle="modal" data-target="#modal"></a>
+													</div>
+													<div class="col-md-6 mt-4 mt-md-1">
+														<div class="row align-items-center">
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name3-7">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">Yes</span>
+										            </label>
+															</div>
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name3-7">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">I am not ready yet</span>
+										            </label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="block">
+												<div class="row row-2 align-items-center">
+													<div class="col-md-6">
+														<span class="align-middle fz-16 mr-1">Hereditary Fructosuria</span>
+														<a href="#!" class="img-question"  data-toggle="modal" data-target="#modal"></a>
+													</div>
+													<div class="col-md-6 mt-4 mt-md-1">
+														<div class="row align-items-center">
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name3-8">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">Yes</span>
+										            </label>
+															</div>
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name3-8">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">I am not ready yet</span>
+										            </label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="block">
+												<div class="row row-2 align-items-center">
+													<div class="col-md-6">
+														<span class="align-middle font-weight-bold fz-16 mr-1">All of them</span>
+													</div>
+													<div class="col-md-6 mt-4 mt-md-1">
+														<div class="row align-items-center">
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name3-all">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">Yes</span>
+										            </label>
+															</div>
+															<div class="col-auto">
+																<label class="form-check-label radio-covid">	
+										              <input type="radio" name="name3-all">
+										              <span class="fas fa-check align-middle"></span>
+										              <span class="align-middle fz-14">I am not ready yet</span>
+										            </label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>	
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center justify-content-md-between align-items-center pt-5">
+							<div class="col-md-7 text-center text-md-left mb-4 mb-md-0">
+								<div class="fz-18 font-weight-bold text-black">Once you’ve selected the traits that you’d like to see, please click ‘See My Reports Now”</div>
+							</div>
+							<div class="col-auto">
+								<button class="btn btn-success font-weight-normal py-2 fz-14">See My Reports Now</button>
+							</div>
+						</div>
+						<div class="text-center text-md-left mt-4 mt-md-5">
+							<a href="#!" class="back fz-14 font-weight-bold">
+								<img src="img/art/arrow-art2.svg" alt="" width="15">
+								<span class="align-middle ml-1">Go Back</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="modal fade modal-2 modal-right" id="modal">
+		  <div class="modal-dialog modal-dialog-centered">
+		    <div class="modal-content">
+		    	<span class="close" data-dismiss="modal">
+						<img src="img/close.svg" alt="">
+					</span>
+					<h5 class="fz-20 font-weight-normal mb-3">Disease traits lists:</h5>
+					<div class="card card-reports card-gray mb-5">
+						<div class="scroll-wrap">
+							<div class="scroll">
+								<div class="block"><a href="#!" class="active">Age-related Macular Degeneration</a></div>
+								<div class="block"><a href="#!">Celiac Disease</a></div>
+								<div class="block"><a href="#!">Familial Hypercholesterolemia</a></div>
+								<div class="block"><a href="#!">Iron Overload Disorder</a></div>
+								<div class="block"><a href="#!">G6PD Deficiency</a></div>
+								<div class="block"><a href="#!">Hereditary Amyloidosis (TTR-Related)</a></div>
+								<div class="block"><a href="#!">Hereditary Thrombophilia</a></div>
+								<div class="block"><a href="#!">MUTYH-Associated Polyposis</a></div>
+								<div class="block"><a href="#!">Alpha-1 antitrypsin deficiency</a></div>
+								<div class="block"><a href="#!">Late-Onset Alzheimer's Disease</a></div>
+								<div class="block"><a href="#!">Parkinson's Disease</a></div>
+							</div>
+						</div>	
+					</div>
+					<h5 class="fz-20 pt-2">Age-related Macular Degeneration</h5>
+					<p class="fz-16 pb-3">Age-related macular degeneration (AMD) is an eye condition that can obscure the sharp, central vision you need for reading and other eyesight related activities.</p>
+					<h6>Here are some information that can help you decide whether or not to view this report:</h6>
+					<div class="form-row mb-3">
+						<div class="col-auto">
+							<span class="text-success-2">●</span>
+						</div>
+						<div class="col">AMD is a common eye disease and the leading cause of vision loss for people aged 50 and older.</div>
+					</div>
+					<div class="form-row mb-3">
+						<div class="col-auto">
+							<span class="text-success-2">●</span>
+						</div>
+						<div class="col">This disease is commonly found among people of caucasian descent.</div>
+					</div>
+					<div class="form-row mb-3">
+						<div class="col-auto">
+							<span class="text-success-2">●</span>
+						</div>
+						<div class="col">This trait report does not cover all possible variants in the present genes or other genes associated with increased risk of <b>Age-related macular degeneration (AMD)</b></div>
+					</div>
+		    </div>
+		  </div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<script src="libs/owl-carousel-2/owl.carousel.min.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>
